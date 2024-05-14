@@ -1,0 +1,195 @@
+main {
+  .contactpage {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    ._contact {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: start;
+
+      ._left {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .text_if {
+          h2 {
+            line-height: 1.4;
+            color: #fff;
+            font-weight: 600;
+            font-family: "Josefin Sans", Arial, sans-serif;
+            margin-bottom: 25px;
+          }
+        }
+        ._address {
+          span {
+            color: white;
+            font-size: 18px;
+          }
+          p {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 300;
+            color: gray;
+          }
+        }
+        ._if {
+          span {
+            color: white;
+            font-size: 18px;
+          }
+          p {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 300;
+            color: #c49b63;
+          }
+        }
+      }
+      ._right {
+        width: 50%;
+
+        .fr_name_email {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          input {
+            width: 45%;
+            background-color: transparent;
+            border: none;
+            height: 50px;
+            border-bottom: 1px solid gray;
+
+            &::placeholder {
+              color: white;
+              font-size: 16px;
+            }
+
+            &:active,
+            &:focus {
+              outline: none;
+              border: none;
+              border-bottom: 1px solid #c49b63;
+            }
+          }
+        }
+        ._subject {
+          margin-top: 30px;
+          width: 100%;
+          input {
+            background-color: transparent;
+            border: none;
+            height: 50px;
+            margin-bottom: 30px;
+            width: 100%;
+            border-bottom: 1px solid gray;
+            &::placeholder {
+              color: white;
+              font-size: 16px;
+            }
+
+            &:active,
+            &:focus {
+              outline: none;
+              border: none;
+              border-bottom: 1px solid #c49b63;
+            }
+          }
+        }
+        .message {
+          width: 100%;
+          textarea {
+            background-color: transparent;
+            border: none;
+            height: 100px;
+
+            width: 100%;
+            border-bottom: 1px solid gray;
+            &::placeholder {
+              color: white;
+              font-size: 16px;
+            }
+            &:active,
+            &:focus {
+              outline: none;
+              border: none;
+              border-bottom: 1px solid #c49b63;
+            }
+          }
+        }
+        button {
+          width: 35%;
+          padding: 20px;
+          background-color: #c49b63;
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+          cursor: pointer;
+          &:hover {
+            background-color: transparent;
+            border: 1px solid #c49b63;
+            color: white;
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .map_contact {
+    width: 100%;
+    margin-bottom: 100px;
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  main {
+    .contactpage {
+      ._contact {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  main {
+    .contactpage {
+      ._contact {
+        width: 100%;
+        ._right {
+          button {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 601px) {
+  main {
+    .contactpage {
+      ._contact {
+        flex-wrap: wrap;
+        width: 95%;
+        ._left {
+          width: 100%;
+        }
+        ._right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

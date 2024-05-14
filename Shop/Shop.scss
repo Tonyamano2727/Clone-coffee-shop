@@ -1,0 +1,174 @@
+main{
+    .tabs {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 100%;
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .fr_tabs {
+          display: flex;
+          z-index: 8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          padding: 20px;
+          
+          li {
+            list-style: none;
+            margin: 0 20px;
+            z-index: 1000000;
+            // width: 10%;
+            padding: 15px;
+            color: black;
+            border-radius: 0;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 400;
+            position: relative;
+            border-bottom: 1px solid #c49b63;
+            margin-left: 5px;
+            margin-right: 5px;
+            &:hover{
+              background-color: #c49b63;
+              transition: 0.3s ease-in-out;
+              a{
+                color: #000;
+              }
+            }
+            
+            a {
+              text-decoration: none;
+              color: #c49b63;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;  
+            }
+            &:focus{
+              background-color: #c49b63;
+              outline: none;
+              a{
+                color: #000;
+              }
+            }
+          }
+        }
+        .tabs-0{
+          width: 80%;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          display: flex;
+          padding: 20px;
+          .item_tab1_s {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 23%;
+            flex-direction: column;
+            img {
+              width: 100%;
+              object-fit: cover;
+              height: 240px;
+              margin-bottom: 20px;
+            }
+            h3 {
+              color: white;
+              font-size: 20px;
+            }
+            p {
+              line-height: 25px;
+              font-size: 16px;
+              width: 90%;
+              margin-top: 15px;
+            }
+            .price {
+              margin-bottom: 10px;
+              font-size: 20px;
+              color: white;
+            }
+            a{
+              width: 40%;
+              padding: 8px;
+              margin-top: 5px;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #c49b63;
+              color: #c49b63;
+              display: flex;
+              background-color: transparent;
+              &:hover {
+                background-color: #c49b63;
+                color: white;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+              }
+            }
+          }
+        }
+        .tabs-1,
+        .tabs-2,
+        .tabs-3 {
+          width: 80%;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          display: flex;
+          padding: 20px;
+          .item_tab1_s {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 30%;
+            flex-direction: column;
+            img {
+              width: 100%;
+              object-fit: cover;
+              height: 270px;
+              margin-bottom: 20px;
+            }
+            h3 {
+              color: white;
+              font-size: 20px;
+            }
+            p {
+              line-height: 25px;
+              font-size: 16px;
+              width: 90%;
+              margin-top: 15px;
+            }
+            .price {
+              margin-bottom: 10px;
+              font-size: 20px;
+              color: white;
+            }
+            a{
+              width: 40%;
+              padding: 8px;
+              margin-top: 5px;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #c49b63;
+              color: #c49b63;
+              display: flex;
+              background-color: transparent;
+              &:hover {
+                background-color: #c49b63;
+                color: white;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+}

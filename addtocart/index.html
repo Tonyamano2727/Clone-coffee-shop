@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <style>
+    /* Optional: Style for better presentation */
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product" data-id="1">
+    <h2>Product 1</h2>
+    <p>Price: $10.00</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product" data-id="2">
+    <h2>Product 2</h2>
+    <p>Price: $20.00</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <a href="cart.html">View Cart</a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const product = button.parentNode;
+          const productId = product.getAttribute('data-id');
+          const productName = product.querySelector('h2').innerText;
+
+          // Store product info in session storage
+          const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+          cart.push({ id: productId, name: productName });
+          sessionStorage.setItem('cart', JSON.stringify(cart));
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

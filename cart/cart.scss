@@ -1,0 +1,100 @@
+main {
+  .cart {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .fr_cart {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      table {
+        width: 100%;
+        ._top {
+          color: white;
+          font-size: 20px;
+          font-weight: 600;
+          background-color: #c49b63;
+          th {
+            padding: 20px;
+            text-align: center;
+          }
+        }
+        tr {
+          color: white;
+          td {
+            text-align: center;
+            padding: 50px;
+            img {
+              display: block;
+              width: 100px;
+              height: 100px;
+              margin: 0 auto;
+            }
+            input {
+              height: 54px !important;
+              text-align: center;
+              border: 1px solid rgba(255, 255, 255, 0.1) !important;
+              color: #c49b63 !important;
+              padding: 0;
+              background-color: transparent;
+            }
+          }
+          .produc_name {
+            h3 {
+              color: white;
+              margin-bottom: 10px;
+              font-size: 16px;
+              text-transform: uppercase;
+            }
+            p {
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+  }
+  ._carttotal{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    ._fr_carttotal{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border: 1px solid gray;
+        justify-content: end;
+        align-items: end;
+        padding: 30px;
+        ._top{
+            border-bottom: 1px solid gray;
+            h3{
+                color: white;
+                font-size: 20px;
+            }
+            p{
+               display: flex;
+               justify-content: start;
+               color: white;
+               span{
+                margin-right: 50px;
+               }
+            }
+        }
+        ._bottom{
+          p{
+            margin-top: 20px;
+            span{
+              width: 100%;
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+            font-size: 20px;
+            }
+          }
+        }
+    }
+  }
+}
